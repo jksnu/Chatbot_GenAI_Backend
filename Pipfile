@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+flask-cors = "*"
+python-dotenv = "*"
+pypdf2 = "*"
+python-docx = "*"
+python-pptx = "*"
+openpyxl = "*"
+pymupdf = "*"
+faiss-cpu = "*"
+huggingface-hub = "*"
+together = "*"
+certifi = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.13"
