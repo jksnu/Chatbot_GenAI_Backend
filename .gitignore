@@ -4,4 +4,5 @@ my.py
 __pycache__/
 .env
 data/
+chroma_db/
 

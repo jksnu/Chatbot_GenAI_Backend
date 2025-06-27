@@ -16,6 +16,8 @@ faiss-cpu = "*"
 huggingface-hub = "*"
 together = "*"
 certifi = "*"
+chromadb = "*"
+numpy = "*"
 
 [dev-packages]
 
