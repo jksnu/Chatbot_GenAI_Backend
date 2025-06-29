@@ -55,7 +55,7 @@ def upload_documents():
 @routes_bp.route("/query", methods=["POST"])
 def query_document():
     try:
-        query = request.form.get("query")
+        query = request.get_json()["query"]
         if not query:
             return jsonify({"error": "Query string is required."}), 400
 

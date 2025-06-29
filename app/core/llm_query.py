@@ -44,7 +44,7 @@ def get_llm_response(prompt: str) -> str:
         data = {
             "inputs": prompt,
             "parameters": {
-                "temperature": 0.5,
+                "temperature": 0.1,
                 "max_new_tokens": 200
             }
         }
@@ -73,7 +73,7 @@ def answer_query(query: str) -> str:
             return query, "No relevant documents found for your query."
         
         context = "\n".join(similar_docs)
-        prompt = f"Context:\n{context}\n\nQuestion: {query}\nAnswer:"
+        prompt = f"Context:\n{context}\n\nAnswer concisely based only on the given context.\n\nQuestion: {query}\nAnswer:"
         return get_llm_response(prompt)
     except Exception as e:
         logger.exception("Error answering query")
