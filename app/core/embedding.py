@@ -10,11 +10,11 @@ headers = {
 }
 
 logger = logging.getLogger(__name__)
-EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "BAAI/bge-small-en-v1.5")    
+EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "sentence-transformers/distilbert-base-nli-mean-tokens")    
 
 # Function to get embedding for a given text using Hugging Face API
 # This function assumes that the environment variable EMBEDDING_MODEL is set to a valid Hugging Face model ID
-# Example: EMBEDDING_MODEL="BAAI/bge-small-en-v1.5"
+# Example: EMBEDDING_MODEL="sentence-transformers/distilbert-base-nli-mean-tokens"
 
 def get_embedding(text: str) -> List[float]:
     try:
