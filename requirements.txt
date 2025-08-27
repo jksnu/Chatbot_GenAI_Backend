@@ -1,0 +1,14 @@
+flask
+flask-cors
+python-dotenv
+pypdf2
+python-docx
+python-pptx
+openpyxl
+pymupdf
+faiss-cpu
+together
+certifi
+chromadb
+numpy
+huggingface-hub
