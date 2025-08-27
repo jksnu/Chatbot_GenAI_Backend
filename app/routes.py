@@ -61,8 +61,10 @@ def query_document():
 
         logger.info(f"Received query: {query}")
 
-        question, answer = answer_query(query)
-        return jsonify({"status_code":200, "content":{"question": question, "answer": answer}})
+        #question, answer = answer_query(query)
+        answer = answer_query(query) 
+        
+        return jsonify({"status_code":200, "content":{"question": query, "answer": answer}})
     except Exception as e:
         logger.exception("Query processing failed")
         return jsonify({"error": "Internal server error during query processing."}), 500

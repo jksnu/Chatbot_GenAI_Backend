@@ -20,7 +20,7 @@ def get_embedding(text: str) -> List[float]:
     try:
         url = f"https://api-inference.huggingface.co/models/{EMBEDDING_MODEL}"
         print(f"url: {url}")
-        response = requests.post(url, headers=headers, json={"inputs": text}, timeout=60)
+        response = requests.post(url, headers=headers, json={"inputs": text}, timeout=60, verify=False)
         response.raise_for_status()
         embedding = response.json()
         return embedding  # This is a list of floats

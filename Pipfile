@@ -13,11 +13,11 @@ python-pptx = "*"
 openpyxl = "*"
 pymupdf = "*"
 faiss-cpu = "*"
-huggingface-hub = "*"
 together = "*"
 certifi = "*"
 chromadb = "*"
 numpy = "*"
+huggingface-hub = "*"
 
 [dev-packages]
 
