@@ -17,10 +17,17 @@ python run.py
 # .ENV
 
 APP_PORT=8000
+
 UPLOAD_FOLDER=data/uploads
+
 VECTOR_DIR=data/vector_store
+
 LOG_DIR=logs
+
 MAX_CONTENT_LENGTH_MB=2
+
 HUGGINGFACEHUB_API_TOKEN=Your_HuggingFace_API_Token
+
 LLM_MODEL=mistralai/Mixtral-8x7B-Instruct-v0.1
+
 EMBEDDING_MODEL=BAAI/bge-small-en-v1.5
